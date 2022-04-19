@@ -8,7 +8,7 @@
 
 void setup(void);
 void loop(void);
-uint8_t get_direction(void);
+int get_direction(void);
 uint16_t get_signal(void);
 
 void update_position(float pos);

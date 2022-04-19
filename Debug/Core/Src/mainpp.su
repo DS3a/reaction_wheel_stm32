@@ -45,7 +45,7 @@
 ../Core/Src/mainpp.cpp:35:6:void loop()	8	static
 ../Core/Src/mainpp.cpp:41:6:void spin()	8	static
 ../Core/Src/mainpp.cpp:45:6:void update_position(float)	16	static
-../Core/Src/mainpp.cpp:49:9:uint8_t get_direction()	4	static
+../Core/Src/mainpp.cpp:49:5:int get_direction()	4	static
 ../Core/Src/mainpp.cpp:57:10:uint16_t get_signal()	4	static
 ../Core/Inc/ros/msg.h:188:15:static void ros::Msg::varToArr(A, V) [with A = unsigned char*; V = long unsigned int]	24	static
 ../Core/Inc/ros/msg.h:196:15:static void ros::Msg::arrToVar(V&, A) [with V = long unsigned int; A = unsigned char*]	24	static

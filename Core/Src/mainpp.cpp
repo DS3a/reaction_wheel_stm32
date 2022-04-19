@@ -46,7 +46,7 @@ void update_position(float pos) {
   position = pos;
 }
 
-uint8_t get_direction(void) {
+int get_direction(void) {
   if (req_signal >= 0) {
 	  return 1;
   } else {

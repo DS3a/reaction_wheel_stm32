@@ -87,7 +87,7 @@ void bldc_entry(void *argument);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-uint8_t direction;
+int direction;
 uint16_t pwm_signal;
 /* USER CODE END 0 */
 
@@ -387,7 +387,7 @@ void rosserial_entry(void *argument)
 * @retval None
 */
 
-uint32_t counter = 0;
+int32_t counter = 0;
 
 void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim) {
   counter = __HAL_TIM_GET_COUNTER(htim);
@@ -400,7 +400,7 @@ void encoder_entry(void *argument)
   /* Infinite loop */
   for(;;)
   {
-	update_position(counter);
+	update_position(counter*6.7924);
     osDelay(1);
   }
   /* USER CODE END encoder_entry */
